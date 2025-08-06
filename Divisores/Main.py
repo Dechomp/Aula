@@ -3,13 +3,13 @@ def main():
     divisores = ""
     i = 2
     j = 0
-    while num != i and num != 1:
+    while num != i and num > 1:
         if num % i == 0:
             divisores += " " + str ( i )
             j += 1
         i += 1
 
-    if j == 0:
+    if j == 0 and num > 1:
         print ("Número primo")
     elif num == 1:
         print("1 não é primo")
